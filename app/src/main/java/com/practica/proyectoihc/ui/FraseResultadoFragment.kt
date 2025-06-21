@@ -1,7 +1,9 @@
 package com.practica.proyectoihc.ui
 
 import android.os.Bundle
+import android.speech.tts.TextToSpeech
 import android.view.*
+import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
@@ -9,17 +11,22 @@ import com.practica.proyectoihc.R
 import okhttp3.*
 import org.json.JSONObject
 import java.io.IOException
+import java.util.* // Para Locale
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 
 
-class FraseResultadoFragment : Fragment() {
+class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
 
     private val args: FraseResultadoFragmentArgs by navArgs()
     private lateinit var tvResultado: TextView
+    private lateinit var btnRepetir: Button
 
     private val client = OkHttpClient()
     private val GROQ_API_KEY = "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"
+
+    private var tts: TextToSpeech? = null
+    private var fraseGenerada: String = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -28,26 +35,32 @@ class FraseResultadoFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         tvResultado = view.findViewById(R.id.tvResultado)
+        btnRepetir = view.findViewById(R.id.btnRepetir)
+        btnRepetir.setOnClickListener {
+            reproducirFrase()
+        }
+
+        tts = TextToSpeech(requireContext(), this)
 
         val contexto = args.fraseContexto
         view.postDelayed({
             generarFraseMotivacional(contexto)
-        }, 1500) // 1.5 segundos
+        }, 1500)
     }
 
     private fun generarFraseMotivacional(contexto: String) {
         val prompt = """
             Eres un acompañante emocional compasivo. 
             Dame una frase breve, cálida y poderosa para reconfortar emocionalmente a alguien que está pasando por lo siguiente: $contexto.
-        
             La frase debe:
             - Ser original y no parecer cliché.
             - Evocar calma, esperanza o alivio emocional.
             - Estar escrita en español.
             - Ser apropiada para ser leída en voz alta por una app de ayuda emocional.
+            - IMPORTANTE: La explicación ni la frase deben ser tan extensos
         """.trimIndent()
-
 
         val json = JSONObject().apply {
             put("model", "llama3-8b-8192")
@@ -79,8 +92,12 @@ class FraseResultadoFragment : Fragment() {
                         .getJSONObject(0)
                         .getJSONObject("message")
                         .getString("content")
+                        .trim()
+
+                    fraseGenerada = result
                     activity?.runOnUiThread {
-                        tvResultado.text = result.trim()
+                        tvResultado.text = fraseGenerada
+                        reproducirFrase()
                     }
                 } else {
                     activity?.runOnUiThread {
@@ -89,5 +106,23 @@ class FraseResultadoFragment : Fragment() {
                 }
             }
         })
+    }
+
+    private fun reproducirFrase() {
+        fraseGenerada.takeIf { it.isNotBlank() }?.let {
+            tts?.speak(it, TextToSpeech.QUEUE_FLUSH, null, null)
+        }
+    }
+
+    override fun onInit(status: Int) {
+        if (status == TextToSpeech.SUCCESS) {
+                tts?.language = Locale("es", "MX") // Español (España), puedes usar "es", "MX" también
+        }
+    }
+
+    override fun onDestroyView() {
+        tts?.stop()
+        tts?.shutdown()
+        super.onDestroyView()
     }
 }

@@ -1,20 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_claro"
-    tools:context=".ui.FraseResultadoFragment"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:background="@color/fondo_oscuro">
 
-    <TextView
-        android:id="@+id/tvResultado"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Generando frase motivacional..."
-        android:textSize="22sp"
-        android:textColor="@android:color/black"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:textAlignment="center" />
-</FrameLayout>
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Texto con margen desde el "techo" -->
+        <TextView
+            android:id="@+id/tvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Aquí se mostrará la frase motivacional generada..." />
+
+        <!-- Botón centrado debajo del texto -->
+        <Button
+            android:id="@+id/btnRepetir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Repetir"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#C59BFF"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+</ScrollView>
