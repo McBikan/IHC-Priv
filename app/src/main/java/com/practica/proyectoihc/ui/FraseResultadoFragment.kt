@@ -19,7 +19,7 @@ class FraseResultadoFragment : Fragment() {
     private lateinit var tvResultado: TextView
 
     private val client = OkHttpClient()
-    private val GROQ_API_KEY = "gsk"
+    private val GROQ_API_KEY = "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"
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
