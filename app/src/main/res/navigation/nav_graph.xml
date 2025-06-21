@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <action
+        android:id="@+id/action_global_menuFragment"
+        app:launchSingleTop="true" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.practica.proyectoihc.ui.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.practica.proyectoihc.ui.PerfilFragment"
+        android:label="PerfilFragment"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.practica.proyectoihc.ui.MenuFragment"
+        android:label="MenuFragment"
+        tools:layout="@layout/fragment_menu">
+        <action
+            android:id="@+id/action_menuFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_frasesFragment"
+            app:destination="@id/frasesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_vozFragment"
+            app:destination="@id/vozFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_HIstorialFragment"
+            app:destination="@id/HIstorialFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_emocionesFragment"
+            app:destination="@id/emocionesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.practica.proyectoihc.ui.TestFragment"
+        android:label="TestFragment"
+        tools:layout="@layout/fragment_test">
+        <action
+            android:id="@+id/action_testFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_testFragment_to_preguntasTestFragment"
+            app:destination="@id/preguntasTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/frasesFragment"
+        android:name="com.practica.proyectoihc.ui.FrasesFragment"
+        android:label="FrasesFragment"
+    tools:layout="@layout/fragment_frases">
+        <action
+            android:id="@+id/action_frasesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_frasesFragment_to_fraseResultadoFragment"
+            app:destination="@id/fraseResultadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vozFragment"
+        android:name="com.practica.proyectoihc.ui.VozFragment"
+        android:label="VozFragment"
+        tools:layout="@layout/fragment_voz">
+        <action
+            android:id="@+id/action_vozFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_vozFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.practica.proyectoihc.ui.ChatFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/fragment_chat"/>
+    <fragment
+        android:id="@+id/HIstorialFragment"
+        android:name="com.practica.proyectoihc.ui.HIstorialFragment"
+        android:label="fragment_historial"
+        tools:layout="@layout/fragment_historial" >
+        <action
+            android:id="@+id/action_HIstorialFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emocionesFragment"
+        android:name="com.practica.proyectoihc.ui.EmocionesFragment"
+        android:label="EmocionesFragment"
+        tools:layout="@layout/fragment_emociones" >
+        <action
+            android:id="@+id/action_emocionesFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+        <action
+            android:id="@+id/action_emocionesFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="com.practica.proyectoihc.ui.ResultadoFragment"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" />
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="com.practica.proyectoihc.ui.RegistroFragment"
+        android:label="fragment_registro"
+        tools:layout="@layout/fragment_registro" >
+        <action
+            android:id="@+id/action_registroFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/psicoFragment"
+        android:name="com.practica.proyectoihc.ui.PsicoFragment"
+        android:label="fragment_psico"
+        tools:layout="@layout/fragment_psico" >
+        <action
+            android:id="@+id/action_psicoFragment_to_testFragment"
+            app:destination="@id/testFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/preguntasTestFragment"
+        android:name="com.practica.proyectoihc.ui.PreguntasTestFragment"
+        android:label="fragment_preguntas_test"
+        tools:layout="@layout/fragment_preguntas_test" >
+        <action
+            android:id="@+id/action_preguntasTestFragment_to_psicoFragment"
+            app:destination="@id/psicoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fraseResultadoFragment"
+        android:name="com.practica.proyectoihc.ui.FraseResultadoFragment"
+        android:label="fragment_frase_resultado"
+        tools:layout="@layout/fragment_frase_resultado">
+        <argument
+            android:name="fraseContexto"
+            app:argType="string" />
+    </fragment>
+</navigation>
