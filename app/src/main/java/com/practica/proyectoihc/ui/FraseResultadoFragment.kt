@@ -53,13 +53,12 @@ class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
     private fun generarFraseMotivacional(contexto: String) {
         val prompt = """
             Eres un acompañante emocional compasivo. 
-            Dame una frase breve, cálida y poderosa para reconfortar emocionalmente a alguien que está pasando por lo siguiente: $contexto.
-            La frase debe:
-            - Ser original y no parecer cliché.
-            - Evocar calma, esperanza o alivio emocional.
-            - Estar escrita en español.
-            - Ser apropiada para ser leída en voz alta por una app de ayuda emocional.
-            - IMPORTANTE: La explicación ni la frase deben ser tan extensos
+            Dame UNICAMENTE una frase un poco extensa, cálida y poderosa para reconfortar emocionalmente a alguien que está pasando por lo siguiente: $contexto.
+            Reglas:
+            - No des una explicacion, contexto ni introduccion.
+            - Devuelme solo la frase, sin comillas, sin adornos.
+            - Que sea apropiada para ser leida en voz alta por una app de apoyo emocional.
+            Solo escribe la frase, Nada mas.
         """.trimIndent()
 
         val json = JSONObject().apply {
