@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 0,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Confío plenamente en mi valor personal.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Reconozco mis logros sin sentirme engreído.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Me trato con la misma amabilidad que a mis amigos.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Acepto mis imperfecciones como parte de mí.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Me siento merecedor de cosas buenas.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Creo en mi capacidad para superar desafíos.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Me felicito cuando hago algo bien.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "No dejo que los errores definan quién soy.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Me siento orgulloso de mis cualidades únicas.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "bloque": 0,
+    "categoria": "Autoestima",
+    "texto": "Valoro mi opinión tanto como la de los demás.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Siento un nudo en el estómago sin razón clara.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Me invade la preocupación al anochecer.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Anticipo problemas incluso cuando todo va bien.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Me resulta difícil quedarme quieto cuando estoy nervioso.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "El ruido repentino me hace saltar.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Evito lugares concurridos por temor a sentirme mal.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Me preocupa que los demás juzguen mis acciones.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Mi mente repite escenarios negativos.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Me cuesta respirar profundamente cuando estoy tenso.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "bloque": 1,
+    "categoria": "Ansiedad",
+    "texto": "Temo perder el control de mis emociones.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Siento que la alegría se ha apagado en mí.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Las actividades que antes disfrutaba ya no me atraen.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Me levanto sin energía para empezar el día.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Me cuesta mantener la concentración en tareas simples.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Me siento sin esperanza sobre el futuro.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Pienso que los demás estarían mejor sin mí.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Me es difícil encontrar motivación para arreglarme.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Siento una tristeza persistente sin causa aparente.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "He notado cambios drásticos en mi apetito.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "bloque": 2,
+    "categoria": "Depresión",
+    "texto": "Me despierto durante la noche con pensamientos oscuros.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Mi lista de pendientes me abruma.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Me irrito cuando las cosas no salen a la primera.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Siento presión constante por cumplir plazos.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "He tenido dolores de cabeza por tensión.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Me cuesta desconectar del trabajo al llegar a casa.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Siento que no tengo tiempo para mí.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Me altero si cambia mi rutina inesperadamente.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Me cuesta delegar tareas en otros.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Pienso en mis obligaciones incluso en momentos de ocio.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "bloque": 3,
+    "categoria": "Estrés",
+    "texto": "Me siento agotado antes de terminar el día.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Creo lazos fácilmente con personas nuevas.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Temo expresar mis desacuerdos con amigos.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Me siento escuchado cuando hablo con mi círculo cercano.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Evito conflictos a cualquier precio.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Pido ayuda cuando la necesito.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Me siento valorado por mi familia.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Me abro emocionalmente con facilidad.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Siento que aporto positivamente a mi grupo.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Me incomoda recibir críticas de los demás.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "bloque": 4,
+    "categoria": "Relaciones",
+    "texto": "Disfruto colaborar en proyectos en equipo.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Identifico y nombro mis emociones con claridad.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Me considero empático con el sentir ajeno.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Gestiono el enojo sin lastimar a nadie.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Expreso alegría sin sentir vergüenza.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Busco comprender el motivo de mis tristezas.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Comparto mis sentimientos con personas de confianza.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Reconozco cuando necesito un momento a solas.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Mantengo la calma ante imprevistos.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Me permito llorar cuando lo necesito.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "bloque": 5,
+    "categoria": "Emociones",
+    "texto": "Analizo mis reacciones para mejorar mi autocontrol.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Me fijo metas claras y alcanzables.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Persisto incluso cuando surgen obstáculos.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Celebro mis avances, por pequeños que sean.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Visualizo el éxito para motivarme.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Disfruto aprender cosas nuevas cada semana.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Transformo errores en oportunidades de mejora.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Me organizo para aprovechar mejor el tiempo.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Busco inspiración en historias de superación.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Divido los proyectos grandes en pasos pequeños.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "bloque": 6,
+    "categoria": "Motivación",
+    "texto": "Encuentro significado en las tareas cotidianas.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Pienso antes de responder en una discusión.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Mantengo hábitos saludables con constancia.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Evito compras impulsivas.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Soy consciente de mis desencadenantes de ira.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Planifico mis gastos antes de recibir dinero.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Respeto horarios de descanso aunque tenga pendientes.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Me alejo de situaciones que fomentan malas decisiones.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Practico técnicas de respiración para calmarme.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Cumplo promesas que me hago a mí mismo.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "bloque": 7,
+    "categoria": "Autocontrol",
+    "texto": "Gestiono mi tiempo en redes sociales.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Agradezco tres cosas cada día.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 81,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Encuentro equilibrio entre trabajo y descanso.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 82,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Realizo actividad física que disfruto.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Practico la meditación o atención plena.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Mantengo contacto con la naturaleza regularmente.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Duermo la cantidad de horas que necesito.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Como alimentos que nutren mi cuerpo.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Disfruto momentos de ocio sin culpa.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Mantengo relaciones que me hacen bien.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "bloque": 8,
+    "categoria": "Bienestar",
+    "texto": "Me doy permiso para decir 'no'.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Me siento auténtico en la mayoría de situaciones.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Mis valores guían mis decisiones importantes.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Acepto mis raíces y mi historia personal.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Exploro nuevas facetas de mi personalidad.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Me siento cómodo con mi apariencia.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 95,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Soy coherente entre lo que pienso y lo que hago.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Valoro mi singularidad frente a los demás.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Sé adaptarme sin perder mi esencia.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Reconozco mis fortalezas y debilidades.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "bloque": 9,
+    "categoria": "Identidad",
+    "texto": "Tengo clara mi dirección de vida.",
+    "opciones": [
+      {
+        "texto": "Nunca",
+        "valor": 0
+      },
+      {
+        "texto": "A veces",
+        "valor": 1
+      },
+      {
+        "texto": "Frecuentemente",
+        "valor": 2
+      },
+      {
+        "texto": "Siempre",
+        "valor": 3
+      }
+    ]
+  }
+]
