@@ -19,8 +19,7 @@ class ChatFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val view = inflater.inflate(R.layout.fragment_chat, container, false)
-        logTextView = view.findViewById(R.id.tvLogs)
-        scrollView = view.findViewById(R.id.scrollLogs)
+
         return view
     }
 

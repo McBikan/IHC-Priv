@@ -44,8 +44,8 @@
             android:id="@+id/action_menuFragment_to_vozFragment"
             app:destination="@id/vozFragment" />
         <action
-            android:id="@+id/action_menuFragment_to_HIstorialFragment"
-            app:destination="@id/HIstorialFragment" />
+            android:id="@+id/action_menuFragment_to_HistorialFragment"
+            app:destination="@id/HistorialFragment" />
         <action
             android:id="@+id/action_menuFragment_to_emocionesFragment"
             app:destination="@id/emocionesFragment" />
@@ -84,8 +84,8 @@
         android:label="ChatFragment"
         tools:layout="@layout/fragment_chat"/>
     <fragment
-        android:id="@+id/HIstorialFragment"
-        android:name="com.practica.proyectoihc.ui.HIstorialFragment"
+        android:id="@+id/HistorialFragment"
+        android:name="com.practica.proyectoihc.ui.HistorialFragment"
         android:label="fragment_historial"
         tools:layout="@layout/fragment_historial" />
     <fragment

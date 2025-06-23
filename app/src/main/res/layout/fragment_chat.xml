@@ -1,17 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/scrollLogs"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="#F5F5F5">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/tvLogs"
+    <!-- 🟦 Pantalla principal (ISAIA y micrófono) -->
+    <ScrollView
+        android:id="@+id/vistaPrincipal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:textSize="14sp"
-        android:textIsSelectable="true"
-        android:fontFamily="monospace" />
-</ScrollView>
+        android:layout_height="match_parent"
+        android:background="@color/fondo_oscuro"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+
+            <!-- Botón hamburguesa -->
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/menu_burger"
+                android:tint="@color/fondo_claro"
+                android:layout_gravity="start"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp" />
+
+            <!-- Bot dentro de círculo blanco -->
+            <FrameLayout
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/circle_white">
+
+                <ImageView
+                    android:id="@+id/ivBot"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/robot_1"
+                    android:layout_gravity="center"
+                    android:translationX="-10dp" />
+            </FrameLayout>
+
+            <!-- Nombre ISAIA -->
+            <TextView
+                android:id="@+id/tvIsaia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ISAIA"
+                android:fontFamily="@font/convergence"
+                android:textSize="60sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="40dp" />
+
+            <!-- Título: CHATBOT DE VOZ -->
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHATBOT DE\nVOZ"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <!-- Texto explicativo -->
+            <TextView
+                android:id="@+id/tvDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USA EL MICRÓFONO\nPARA HABLAR CON ISAIA"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Botón de micrófono con superposición y estado -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="32dp">
+
+                <!-- Micrófono + línea cruzada encima -->
+                <FrameLayout
+                    android:layout_width="64dp"
+                    android:layout_height="64dp">
+
+                    <ImageButton
+                        android:id="@+id/btnMicrofono"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/microfono_circular"
+                        android:backgroundTint="@color/fondo_claro"/>
+                    <ImageView
+                        android:id="@+id/icMuteOverlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_linea_cruzada"
+                        android:visibility="gone"
+                        android:layout_gravity="center" />
+                </FrameLayout>
+
+                <!-- Texto debajo del micrófono -->
+                <TextView
+                    android:id="@+id/tvEstadoMicrofono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Silenciado"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+            <!-- Botón Ver Chat -->
+            <Button
+                android:id="@+id/btnVerChat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver chat"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/fondo_oscuro"
+                android:backgroundTint="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 🟨 Pantalla de conversación (inicialmente oculta) -->
+    <ScrollView
+        android:id="@+id/vistaChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/fondo_claro"
+        android:fillViewport="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/contenedorMensajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Aquí se agregarán dinámicamente los mensajes -->
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volver"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/fondo_oscuro"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

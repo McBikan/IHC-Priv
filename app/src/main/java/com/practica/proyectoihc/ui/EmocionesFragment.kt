@@ -14,7 +14,6 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.Fragment
 import com.practica.proyectoihc.R
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -25,6 +24,8 @@ import java.nio.ByteOrder
 import kotlin.concurrent.thread
 import androidx.navigation.fragment.findNavController
 import org.json.JSONObject
+import androidx.activity.result.ActivityResultLauncher
+
 
 
 class EmocionesFragment : BaseMenuFragment() {
@@ -35,6 +36,8 @@ class EmocionesFragment : BaseMenuFragment() {
     private val recordDurationMs = 4000
 
     private lateinit var audioFile: File
+    private lateinit var permisoAudioLauncher: ActivityResultLauncher<String>
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -46,6 +49,16 @@ class EmocionesFragment : BaseMenuFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        permisoAudioLauncher = registerForActivityResult(
+            androidx.activity.result.contract.ActivityResultContracts.RequestPermission()
+        ) { isGranted ->
+            if (isGranted) {
+                grabarYEnviarWav()
+            } else {
+                Toast.makeText(requireContext(), "Permiso de micrófono denegado", Toast.LENGTH_SHORT).show()
+            }
+        }
+
         val ivMenu = view.findViewById<View>(R.id.ivMenu)
         setupMenuNavigation(ivMenu)
 
@@ -54,31 +67,21 @@ class EmocionesFragment : BaseMenuFragment() {
         btnMicrofono.setOnClickListener {
             verificarPermisoYGrabar()
         }
+
     }
 
     private fun verificarPermisoYGrabar() {
-        if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.RECORD_AUDIO)
-            != PackageManager.PERMISSION_GRANTED) {
-
-            requestPermissions(arrayOf(Manifest.permission.RECORD_AUDIO), 101)
-
-        } else {
+        if (ContextCompat.checkSelfPermission(
+                requireContext(),
+                Manifest.permission.RECORD_AUDIO
+            ) == PackageManager.PERMISSION_GRANTED
+        ) {
             grabarYEnviarWav()
+        } else {
+            permisoAudioLauncher.launch(Manifest.permission.RECORD_AUDIO)
         }
     }
 
-    override fun onRequestPermissionsResult(
-        requestCode: Int, permissions: Array<out String>, grantResults: IntArray
-    ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == 101) {
-            if ((grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED)) {
-                grabarYEnviarWav()
-            } else {
-                Toast.makeText(requireContext(), "Permiso de micrófono denegado", Toast.LENGTH_SHORT).show()
-            }
-        }
-    }
 
     private fun grabarYEnviarWav() {
         val bufferSize = AudioRecord.getMinBufferSize(sampleRate, channelConfig, audioEncoding)

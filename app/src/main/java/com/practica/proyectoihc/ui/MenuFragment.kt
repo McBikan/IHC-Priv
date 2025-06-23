@@ -43,7 +43,7 @@ class MenuFragment : Fragment() {
         }
         // Navegar a HistorialFragment
         btnHistorial.setOnClickListener {
-            findNavController().navigate(R.id.action_menuFragment_to_HIstorialFragment)
+            findNavController().navigate(R.id.action_menuFragment_to_HistorialFragment)
         }
         // Navegar a EmocionesFragment
         btnEmociones.setOnClickListener {
