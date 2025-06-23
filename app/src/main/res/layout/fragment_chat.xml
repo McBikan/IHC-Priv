@@ -23,8 +23,7 @@
                 android:id="@+id/ivMenu"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
-                android:src="@drawable/menu_burger"
-                android:tint="@color/fondo_claro"
+                android:src="@drawable/menu_burger_white"
                 android:layout_gravity="start"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
@@ -107,7 +106,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/ic_linea_cruzada"
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:layout_gravity="center" />
                 </FrameLayout>
 
@@ -116,12 +115,12 @@
                     android:id="@+id/tvEstadoMicrofono"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
                     android:text="Silenciado"
                     android:textColor="@android:color/white"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center" />
+                    android:textStyle="bold" />
             </LinearLayout>
 
 
