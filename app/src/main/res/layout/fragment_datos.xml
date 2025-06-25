@@ -16,6 +16,7 @@
 
         <!-- Foto de perfil + botón agregar foto -->
         <FrameLayout
+            android:id="@+id/ivFoto"
             android:layout_width="160dp"
             android:layout_height="180dp"
             android:layout_marginTop="32dp"
@@ -88,7 +89,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Apellido Paterno"
-            android:inputType="textPassword"
             android:background="@drawable/bg_edittext_white"
             android:textColor="@android:color/black"
             android:textColorHint="@color/gris_oscuro"
@@ -100,7 +100,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Apellido Materno"
-            android:inputType="textPassword"
             android:background="@drawable/bg_edittext_white"
             android:textColor="@android:color/black"
             android:textColorHint="@color/gris_oscuro"
@@ -113,7 +112,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Fecha de Nacimiento(DD-MM-AAAA)"
-            android:inputType="textPassword"
             android:background="@drawable/bg_edittext_white"
             android:textColor="@android:color/black"
             android:textColorHint="@color/gris_oscuro"

@@ -28,7 +28,7 @@ class LoginFragment : Fragment() {
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
 
-        // 👉 Botón Iniciar Sesión
+        // 👉 Iniciar sesión
         binding.btnLogin.setOnClickListener {
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
@@ -47,8 +47,8 @@ class LoginFragment : Fragment() {
                         mostrarMensaje("Verifica tu correo antes de continuar")
                     }
                 }
-                .addOnFailureListener {
-                    mostrarMensaje("Credenciales inválidas o usuario no registrado")
+                .addOnFailureListener { error ->
+                    mostrarMensaje("Error de login: ${error.message}")
                 }
         }
 
@@ -65,12 +65,12 @@ class LoginFragment : Fragment() {
                 .addOnSuccessListener {
                     mostrarMensaje("Correo de recuperación enviado. Revisa tu bandeja de entrada o spam.")
                 }
-                .addOnFailureListener {
-                    mostrarMensaje("No se pudo enviar el correo: ${it.message}")
+                .addOnFailureListener { error ->
+                    mostrarMensaje("No se pudo enviar el correo: ${error.message}")
                 }
         }
 
-        // 👉 Navegar al registro
+        // 👉 Ir al registro
         binding.registerSection.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
         }
@@ -78,7 +78,7 @@ class LoginFragment : Fragment() {
         return binding.root
     }
 
-    // ✅ Verifica si el usuario ya completó sus datos personales
+    // ✅ Verifica si el usuario ya completó sus datos personales en Firestore
     private fun verificarDatosUsuarioYRedirigir(uid: String) {
         firestore.collection("usuarios").document(uid).get()
             .addOnSuccessListener { documento ->
@@ -99,12 +99,11 @@ class LoginFragment : Fragment() {
                         findNavController().navigate(R.id.action_loginFragment_to_datosFragment)
                     }
                 } else {
-                    // Si no existe documento, asumir datos incompletos
                     findNavController().navigate(R.id.action_loginFragment_to_datosFragment)
                 }
             }
-            .addOnFailureListener {
-                mostrarMensaje("Error al verificar tus datos personales")
+            .addOnFailureListener { error ->
+                mostrarMensaje("Error al verificar tus datos personales: ${error.message}")
             }
     }
 

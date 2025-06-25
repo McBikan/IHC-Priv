@@ -13,6 +13,7 @@ navigation = "2.9.0"
 firebase-bom = "33.15.0"
 firebase-auth = "23.2.1"
 firebase-firestore="25.1.4"
+firebase-storage="21.0.2"
 
 
 [libraries]
@@ -29,6 +30,7 @@ androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx",
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebase-bom" }
 firebase-auth = { module = "com.google.firebase:firebase-auth", version.ref = "firebase-auth" }
 firebase-firestore = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebase-firestore" }
+firebase-storage = { module = "com.google.firebase:firebase-storage", version.ref = "firebase-storage" }
 
 
 [plugins]
