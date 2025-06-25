@@ -20,6 +20,9 @@
         <action
             android:id="@+id/action_loginFragment_to_registroFragment"
             app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_datosFragment"
+            app:destination="@id/datosFragment" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -120,6 +123,15 @@
         <argument
             android:name="fraseContexto"
             app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/datosFragment"
+        android:name="com.practica.proyectoihc.ui.DatosFragment"
+        android:label="DatosFragment"
+        tools:layout="@layout/fragment_datos">
+        <action
+            android:id="@+id/action_datosFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
     </fragment>
 
 </navigation>

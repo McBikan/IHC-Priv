@@ -14,55 +14,81 @@
         android:gravity="center_horizontal"
         android:padding="24dp">
 
-        <!-- Bot dentro de círculo -->
+        <!-- Foto de perfil + botón agregar foto -->
         <FrameLayout
+            android:id="@+id/ivFoto"
             android:layout_width="160dp"
-            android:layout_height="160dp"
+            android:layout_height="180dp"
             android:layout_marginTop="32dp"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/circle_white">
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal">
 
+            <!-- Imagen circular -->
             <ImageView
-                android:id="@+id/ivBot"
+                android:id="@+id/ivFotoUsuario"
                 android:layout_width="160dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@drawable/bot_feliz" />
+                android:layout_height="160dp"
+                android:src="@drawable/default_user_dark"
+                android:background="@drawable/circle_white"
+                android:scaleType="centerCrop" />
+
+            <!-- Botón de agregar foto -->
+            <ImageView
+                android:id="@+id/ivAgregarFoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/add_photo"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                android:background="@drawable/circle_white"
+                android:padding="6dp" />
+
         </FrameLayout>
+
+        <!-- Texto debajo del círculo -->
+        <TextView
+            android:id="@+id/tvSubirFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subir foto"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
 
         <!-- Título REGISTRO -->
         <TextView
-            android:id="@+id/tvRegistro"
+            android:id="@+id/tvDatos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="REGISTRO"
+            android:text="Datos Personales"
             android:textSize="40sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"
             android:layout_marginBottom="32dp"
             android:fontFamily="@font/convergence"/>
 
-        <!-- Campos de registro -->
-
+        <!-- Email -->
         <EditText
-            android:id="@+id/etEmail"
+            android:id="@+id/tvNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:background="@drawable/bg_edittext_white"
             android:textColor="@android:color/black"
             android:textColorHint="@color/gris_oscuro"
-            android:hint="Correo electrónico"
+            android:hint="Nombres"
             android:inputType="textEmailAddress"
             android:padding="12dp" />
 
+        <!-- Apellido Paterno-->
         <EditText
-            android:id="@+id/etPassword"
+            android:id="@+id/tvApellidoPaterno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"
-            android:inputType="textPassword"
+            android:hint="Apellido Paterno"
             android:background="@drawable/bg_edittext_white"
             android:textColor="@android:color/black"
             android:textColorHint="@color/gris_oscuro"
@@ -70,23 +96,34 @@
             android:layout_marginBottom="16dp"/>
 
         <EditText
-            android:id="@+id/etConfirmarPassword"
+            android:id="@+id/tvApellidoMaterno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Repetir contraseña"
-            android:inputType="textPassword"
+            android:hint="Apellido Materno"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gris_oscuro"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Repetir contraseña -->
+        <EditText
+            android:id="@+id/tvFechaNac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento(DD-MM-AAAA)"
             android:background="@drawable/bg_edittext_white"
             android:textColor="@android:color/black"
             android:textColorHint="@color/gris_oscuro"
             android:padding="12dp"
             android:layout_marginBottom="24dp"/>
 
-        <!-- Botón de registrarse -->
+        <!-- Botón REGISTRARSE -->
         <Button
-            android:id="@+id/btnRegistrarse"
+            android:id="@+id/btnGuardarInformacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
+            android:text="Guardar Información"
             android:backgroundTint="@color/fondo_claro"
             android:textColor="@color/fondo_oscuro"
             android:textStyle="bold"/>
