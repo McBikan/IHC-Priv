@@ -49,12 +49,32 @@ class LoginFragment : Fragment() {
                 }
         }
 
+        // 👉 Recuperar contraseña
+        binding.tvForgotPassword.setOnClickListener {
+            val email = binding.etEmail.text.toString().trim()
+
+            if (email.isEmpty()) {
+                mostrarMensaje("Por favor, ingresa tu correo para recuperar la contraseña")
+                return@setOnClickListener
+            }
+
+            auth.sendPasswordResetEmail(email)
+                .addOnSuccessListener {
+                    mostrarMensaje("Correo de recuperación enviado. Revisa tu bandeja de entrada o spam.")
+                }
+                .addOnFailureListener {
+                    mostrarMensaje("No se pudo enviar el correo: ${it.message}")
+                }
+        }
+
+        // 👉 Navegar al registro
         binding.registerSection.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
         }
 
         return binding.root
     }
+
 
     private fun mostrarMensaje(msg: String) {
         Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show()
