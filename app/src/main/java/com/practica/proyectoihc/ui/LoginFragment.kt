@@ -10,40 +10,55 @@ import com.practica.proyectoihc.databinding.FragmentLoginBinding
 import androidx.navigation.fragment.findNavController
 import android.widget.Toast
 import com.practica.proyectoihc.R
-
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 
 class LoginFragment : Fragment() {
 
     private var _binding: FragmentLoginBinding? = null
     private val binding get() = _binding!!
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
-        val view = binding.root
-        val btnRegistro: LinearLayout = view.findViewById(R.id.registerSection)
-
-        btnRegistro.setOnClickListener {
-            // Aquí navega al TestFragment
-            findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
-        }
+        auth = FirebaseAuth.getInstance()
 
         binding.btnLogin.setOnClickListener {
             val email = binding.etEmail.text.toString().trim()
             val password = binding.etPassword.text.toString().trim()
 
-            if (email == "admin" && password == "admin") {
-                findNavController().navigate(R.id.action_loginFragment_to_perfilFragment)
-            } else {
-                Toast.makeText(requireContext(), "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
+            if (email.isEmpty() || password.isEmpty()) {
+                mostrarMensaje("Completa todos los campos")
+                return@setOnClickListener
             }
+
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnSuccessListener {
+                    val user: FirebaseUser? = auth.currentUser
+                    if (user != null && user.isEmailVerified) {
+                        findNavController().navigate(R.id.action_loginFragment_to_perfilFragment)
+                    } else {
+                        mostrarMensaje("Verifica tu correo antes de continuar")
+                    }
+                }
+                .addOnFailureListener {
+                    mostrarMensaje("Credenciales inválidas o usuario no registrado")
+                }
         }
 
-        return view
+        binding.registerSection.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registroFragment)
+        }
+
+        return binding.root
     }
 
+    private fun mostrarMensaje(msg: String) {
+        Toast.makeText(requireContext(), msg, Toast.LENGTH_SHORT).show()
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
