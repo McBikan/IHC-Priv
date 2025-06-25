@@ -1,26 +1,27 @@
 package com.practica.proyectoihc.ui
 
-import android.content.Intent
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.speech.RecognitionListener
 import android.speech.RecognizerIntent
 import android.speech.SpeechRecognizer
 import android.speech.tts.TextToSpeech
-import android.view.LayoutInflater
-import android.view.MotionEvent
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.*
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import com.practica.proyectoihc.R
+import com.practica.proyectoihc.model.ChatMessage
 import okhttp3.*
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
+import java.io.File
 import java.io.IOException
 import java.util.*
 
@@ -31,7 +32,7 @@ class ChatFragment : Fragment() {
     private lateinit var tvEstadoMicrofono: TextView
     private lateinit var contenedorMensajes: LinearLayout
     private lateinit var vistaPrincipal: ScrollView
-    private lateinit var vistaChat: ScrollView
+    private lateinit var vistaChat: View
     private lateinit var btnVerChat: Button
     private lateinit var btnVolver: Button
 
@@ -39,8 +40,11 @@ class ChatFragment : Fragment() {
     private lateinit var speechIntent: Intent
     private lateinit var tts: TextToSpeech
 
-    private val mensajes: MutableList<Pair<String, Boolean>> = mutableListOf() // Pair(texto, esUsuario)
-
+    private val mensajes: MutableList<ChatMessage> = mutableListOf() // Pair(texto, esUsuario)
+    private val gson = Gson()
+    private val archivoChat by lazy {
+        File(requireContext().filesDir, "chat.json")
+    }
     private val GROQ_API_KEY = "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"
 
     override fun onCreateView(
@@ -63,6 +67,7 @@ class ChatFragment : Fragment() {
         btnVolver = view.findViewById(R.id.btnVolver)
 
         inicializarVoz()
+        cargarMensajes()
 
         btnMicrofono.setOnTouchListener { _, event ->
             when (event.action) {
@@ -110,7 +115,7 @@ class ChatFragment : Fragment() {
         speechRecognizer = SpeechRecognizer.createSpeechRecognizer(requireContext())
         speechIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
             putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM)
-            putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale("es", "MX"))
+            putExtra(RecognizerIntent.EXTRA_LANGUAGE,   "es-ES")
         }
     }
 
@@ -119,7 +124,7 @@ class ChatFragment : Fragment() {
             override fun onResults(results: Bundle?) {
                 val texto = results?.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)?.get(0)
                 texto?.let {
-                    agregarMensaje(it, true)
+                    agregarMensaje(ChatMessage(it, true))
                     enviarAGroq(it)
                 }
             }
@@ -178,37 +183,50 @@ class ChatFragment : Fragment() {
                     .getString("content")
 
                 activity?.runOnUiThread {
-                    agregarMensaje(respuesta, false)
+                    agregarMensaje(ChatMessage(respuesta, false))
                     tts.speak(respuesta, TextToSpeech.QUEUE_FLUSH, null, null)
                 }
             }
         })
     }
 
-    private fun agregarMensaje(texto: String, esUsuario: Boolean) {
-        mensajes.add(Pair(texto, esUsuario))
+    private fun agregarMensaje(mensaje: ChatMessage) {
+        mensajes.add(mensaje)
+        guardarMensajes()
     }
 
     private fun mostrarMensajes() {
         contenedorMensajes.removeAllViews()
         val inflater = LayoutInflater.from(requireContext())
 
-        mensajes.forEach { (mensaje, esUsuario) ->
+        mensajes.forEach {
             val layout = inflater.inflate(
-                if (esUsuario) R.layout.item_mensaje_usuario else R.layout.item_mensaje_bot,
+                if (it.esUsuario) R.layout.item_mensaje_usuario else R.layout.item_mensaje_bot,
                 contenedorMensajes,
                 false
             )
 
             val tvMensaje = layout.findViewById<TextView>(
-                if (esUsuario) R.id.tvMensajeUsuario else R.id.tvMensajeBot
+                if (it.esUsuario) R.id.tvMensajeUsuario else R.id.tvMensajeBot
             )
 
-            tvMensaje.text = mensaje
+            tvMensaje.text = it.texto
             contenedorMensajes.addView(layout)
         }
     }
+    private fun guardarMensajes() {
+        val json = gson.toJson(mensajes)
+        archivoChat.writeText(json)
+    }
 
+    private fun cargarMensajes() {
+        if (archivoChat.exists()) {
+            val tipo = object : TypeToken<MutableList<ChatMessage>> () {}.type
+            val json = archivoChat.readText()
+            mensajes.clear()
+            mensajes.addAll(gson.fromJson(json, tipo))
+        }
+    }
 
     override fun onDestroyView() {
         super.onDestroyView()
