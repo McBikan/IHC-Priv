@@ -11,34 +11,57 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="24dp"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:layout_gravity="center">
 
-        <ImageView
-            android:id="@+id/ivFotoUsuario"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:src="@drawable/ic_user_placeholder"
-            android:background="@drawable/circle_white"
-            android:scaleType="centerCrop"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_marginBottom="16dp" />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <!-- Círculo de la foto -->
+            <ImageView
+                android:id="@+id/ivFotoUsuario"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/default_user"
+                android:background="@drawable/circle_white"
+                android:scaleType="centerCrop"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- Ícono de agregar foto en la esquina inferior derecha -->
+            <ImageView
+                android:id="@+id/ivAgregarFoto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="4dp"
+                android:padding="4dp"
+                android:src="@drawable/add_photo" />
+        </FrameLayout>
 
         <EditText
             android:id="@+id/etNombres"
-            android:hint="Nombres"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/gris_oscuro"
+            android:textColor="@color/black"
+            android:hint="Nombres" />
 
         <EditText
             android:id="@+id/etApellidos"
             android:hint="Apellidos"
+            android:textColorHint="@color/gris_oscuro"
+            android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <EditText
             android:id="@+id/etFechaNacimiento"
             android:hint="Fecha de nacimiento"
+            android:textColorHint="@color/gris_oscuro"
+            android:textColor="@color/black"
             android:focusable="false"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
