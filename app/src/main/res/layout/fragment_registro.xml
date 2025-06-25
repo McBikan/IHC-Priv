@@ -44,15 +44,18 @@
             android:fontFamily="@font/convergence"/>
 
         <!-- Campos de registro -->
+
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gris_oscuro"
             android:hint="Correo electrónico"
             android:inputType="textEmailAddress"
-            android:background="@android:drawable/editbox_background"
-            android:padding="12dp"
-            android:layout_marginBottom="16dp"/>
+            android:padding="12dp" />
 
         <EditText
             android:id="@+id/etPassword"
@@ -60,7 +63,9 @@
             android:layout_height="wrap_content"
             android:hint="Contraseña"
             android:inputType="textPassword"
-            android:background="@android:drawable/editbox_background"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gris_oscuro"
             android:padding="12dp"
             android:layout_marginBottom="16dp"/>
 
@@ -70,7 +75,9 @@
             android:layout_height="wrap_content"
             android:hint="Repetir contraseña"
             android:inputType="textPassword"
-            android:background="@android:drawable/editbox_background"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gris_oscuro"
             android:padding="12dp"
             android:layout_marginBottom="24dp"/>
 
