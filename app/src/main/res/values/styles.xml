@@ -12,4 +12,10 @@
         <item name="android:paddingVertical">8dp</item>
     </style>
 
+    <style name="EstiloDatePicker" parent="Theme.MaterialComponents.Dialog">
+        <item name="colorAccent">@color/morado_fuerte</item>
+        <item name="android:background">@color/fondo_oscuro</item>
+    </style>
+
+
 </resources>

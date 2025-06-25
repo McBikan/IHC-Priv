@@ -3,77 +3,131 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_claro"
-    tools:context=".ui.DatosFragment">
+    android:background="@color/fondo_oscuro"
+    android:fillViewport="true"
+    tools:context=".ui.RegistroFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="24dp"
         android:gravity="center_horizontal"
-        android:layout_gravity="center">
+        android:padding="24dp">
 
+        <!-- Foto de perfil + botón agregar foto -->
         <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_width="160dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal">
 
-            <!-- Círculo de la foto -->
+            <!-- Imagen circular -->
             <ImageView
                 android:id="@+id/ivFotoUsuario"
-                android:layout_width="180dp"
-                android:layout_height="180dp"
-                android:src="@drawable/default_user"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/default_user_dark"
                 android:background="@drawable/circle_white"
-                android:scaleType="centerCrop"
-                android:clickable="true"
-                android:focusable="true" />
+                android:scaleType="centerCrop" />
 
-            <!-- Ícono de agregar foto en la esquina inferior derecha -->
+            <!-- Botón de agregar foto -->
             <ImageView
                 android:id="@+id/ivAgregarFoto"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/add_photo"
                 android:layout_gravity="bottom|end"
                 android:layout_margin="4dp"
-                android:padding="4dp"
-                android:src="@drawable/add_photo" />
+                android:background="@drawable/circle_white"
+                android:padding="6dp" />
+
         </FrameLayout>
 
+        <!-- Texto debajo del círculo -->
+        <TextView
+            android:id="@+id/tvSubirFoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subir foto"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Título REGISTRO -->
+        <TextView
+            android:id="@+id/tvDatos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Datos Personales"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/convergence"/>
+
+        <!-- Email -->
         <EditText
-            android:id="@+id/etNombres"
+            android:id="@+id/tvNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
             android:textColorHint="@color/gris_oscuro"
-            android:textColor="@color/black"
-            android:hint="Nombres" />
+            android:hint="Nombres"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <!-- Apellido Paterno-->
+        <EditText
+            android:id="@+id/tvApellidoPaterno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido Paterno"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gris_oscuro"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
         <EditText
-            android:id="@+id/etApellidos"
-            android:hint="Apellidos"
-            android:textColorHint="@color/gris_oscuro"
-            android:textColor="@color/black"
+            android:id="@+id/tvApellidoMaterno"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Apellido Materno"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gris_oscuro"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
 
+        <!-- Repetir contraseña -->
         <EditText
-            android:id="@+id/etFechaNacimiento"
-            android:hint="Fecha de nacimiento"
-            android:textColorHint="@color/gris_oscuro"
-            android:textColor="@color/black"
-            android:focusable="false"
+            android:id="@+id/tvFechaNac"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="Fecha de Nacimiento(DD-MM-AAAA)"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_edittext_white"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gris_oscuro"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp"/>
 
+        <!-- Botón REGISTRARSE -->
         <Button
-            android:id="@+id/btnGuardar"
-            android:text="Guardar datos"
-            android:background="@color/morado_fuerte"
-            android:textColor="@color/white"
+            android:id="@+id/btnGuardarInformacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp" />
+            android:text="Guardar Información"
+            android:backgroundTint="@color/fondo_claro"
+            android:textColor="@color/fondo_oscuro"
+            android:textStyle="bold"/>
     </LinearLayout>
-
 </ScrollView>

@@ -27,8 +27,8 @@
                 android:id="@+id/ivBot"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
-                android:src="@drawable/bot_feliz"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:src="@drawable/bot_feliz" />
         </FrameLayout>
 
         <!-- Título REGISTRO -->
