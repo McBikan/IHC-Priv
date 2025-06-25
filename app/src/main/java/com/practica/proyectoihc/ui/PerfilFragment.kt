@@ -45,6 +45,10 @@ class PerfilFragment : BaseMenuFragment() {
         val tvEdadValor = view.findViewById<TextView>(R.id.tvEdadValor)
         val ivProfileImage = view.findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.ivProfileImage)
 
+        val tvAntecedente1 = view.findViewById<TextView>(R.id.tvAntecedente1)
+        val tvAntecedente2 = view.findViewById<TextView>(R.id.tvAntecedente2)
+        val tvAntecedente3 = view.findViewById<TextView>(R.id.tvAntecedente3)
+
         // 🔹 Cargar imagen del Storage
         val storageRef = FirebaseStorage.getInstance().reference.child("fotos_perfil/$uid.png")
         storageRef.downloadUrl
@@ -73,6 +77,15 @@ class PerfilFragment : BaseMenuFragment() {
 
                     val edad = calcularEdad(fechaNac)
                     tvEdadValor.text = "$edad AÑOS"
+
+                    val antecedente1 = doc.getString("antecedente1")
+                    val antecedente2 = doc.getString("antecedente2")
+                    val antecedente3 = doc.getString("antecedente3")
+
+                    tvAntecedente1.text = antecedente1?.let { "PROBLEMAS DE $it" } ?: "(Aún no has realizado el test psicológico)"
+                    tvAntecedente2.text = antecedente2?.let { "PROBLEMAS DE $it" } ?: ""
+                    tvAntecedente3.text = antecedente3?.let { "PROBLEMAS DE $it" } ?: ""
+
                 } else {
                     Toast.makeText(requireContext(), "No se encontraron datos", Toast.LENGTH_SHORT).show()
                 }

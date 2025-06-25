@@ -83,7 +83,6 @@
             android:layout_width="64dp"
             android:layout_height="64dp"
             android:background="@drawable/microfono_circular"
-            android:tint="@android:color/white"
             android:layout_marginTop="24dp" />
 
         <TextView
@@ -97,18 +96,6 @@
             android:visibility="gone"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"/>
-
-        <!-- Texto transcrito del usuario -->
-        <TextView
-            android:id="@+id/tvTextoReconocido"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Texto reconocido aparecerá aquí"
-            android:textSize="20sp"
-            android:textColor="@android:color/black"
-            android:gravity="center"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/convergence"
             />
 
 

@@ -177,7 +177,7 @@
                 android:id="@+id/tvAntecedente1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="• ANSIEDAD"
+                android:text="(Aún no has realizado el test psicológico)"
                 android:textColor="@android:color/white"
                 android:layout_marginTop="8dp" />
 
@@ -185,7 +185,7 @@
                 android:id="@+id/tvAntecedente2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="• ESTRÉS LABORAL"
+                android:text=""
                 android:textColor="@android:color/white"
                 android:layout_marginTop="4dp" />
 
@@ -193,7 +193,7 @@
                 android:id="@+id/tvAntecedente3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="• PROBLEMAS FAMILIARES"
+                android:text=""
                 android:textColor="@android:color/white"
                 android:layout_marginTop="4dp" />
         </LinearLayout>
