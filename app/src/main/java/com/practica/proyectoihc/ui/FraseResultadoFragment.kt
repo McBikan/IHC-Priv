@@ -21,6 +21,7 @@ class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
     private val args: FraseResultadoFragmentArgs by navArgs()
     private lateinit var tvResultado: TextView
     private lateinit var btnRepetir: Button
+    private lateinit var btnDetener: Button
 
     private val client = OkHttpClient()
     private val GROQ_API_KEY = "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"
@@ -38,10 +39,14 @@ class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
 
         tvResultado = view.findViewById(R.id.tvResultado)
         btnRepetir = view.findViewById(R.id.btnRepetir)
+        btnDetener = view.findViewById(R.id.btnDetener)
         btnRepetir.setOnClickListener {
             reproducirFrase()
         }
 
+        btnDetener.setOnClickListener {
+            detenerFrase()
+        }
         tts = TextToSpeech(requireContext(), this)
 
         val contexto = args.fraseContexto
@@ -58,6 +63,8 @@ class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
             - No des una explicacion, contexto ni introduccion.
             - Devuelme solo la frase, sin comillas, sin adornos.
             - Que sea apropiada para ser leida en voz alta por una app de apoyo emocional.
+            - Que este en idioma Español
+            - Se comprensiv o    
             Solo escribe la frase, Nada mas.
         """.trimIndent()
 
@@ -112,10 +119,13 @@ class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
             tts?.speak(it, TextToSpeech.QUEUE_FLUSH, null, null)
         }
     }
+    private fun detenerFrase() {
+        tts?.stop()
+    }
 
     override fun onInit(status: Int) {
         if (status == TextToSpeech.SUCCESS) {
-                tts?.language = Locale("es", "MX") // Español (España), puedes usar "es", "MX" también
+            tts?.language = Locale("es", "MX") // Español (España), puedes usar "es", "MX" también
         }
     }
 
