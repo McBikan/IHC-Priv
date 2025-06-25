@@ -12,6 +12,10 @@ import com.practica.proyectoihc.R
 import com.practica.proyectoihc.ui.base.BaseMenuFragment
 import java.text.SimpleDateFormat
 import java.util.*
+import android.widget.ImageView
+import com.bumptech.glide.Glide
+import com.google.firebase.storage.FirebaseStorage
+
 
 class PerfilFragment : BaseMenuFragment() {
 
@@ -40,7 +44,22 @@ class PerfilFragment : BaseMenuFragment() {
         val tvNombreValor = view.findViewById<TextView>(R.id.tvNombreValor)
         val tvApellidoValor = view.findViewById<TextView>(R.id.tvApellidoValor)
         val tvEdadValor = view.findViewById<TextView>(R.id.tvEdadValor)
+        val ivProfileImage = view.findViewById<de.hdodenhof.circleimageview.CircleImageView>(R.id.ivProfileImage)
 
+        // 🔹 Cargar imagen del Storage
+        val storageRef = FirebaseStorage.getInstance().reference.child("fotos_perfil/$uid.png")
+        storageRef.downloadUrl
+            .addOnSuccessListener { uri ->
+                Glide.with(requireContext())
+                    .load(uri)
+                    .placeholder(R.drawable.default_user)
+                    .into(ivProfileImage)
+            }
+            .addOnFailureListener {
+                Toast.makeText(requireContext(), "No se pudo cargar la imagen de perfil", Toast.LENGTH_SHORT).show()
+            }
+
+        // 🔹 Cargar datos Firestore
         firestore.collection("usuarios").document(uid).get()
             .addOnSuccessListener { doc ->
                 if (doc.exists()) {
@@ -49,12 +68,10 @@ class PerfilFragment : BaseMenuFragment() {
                     val apellidoMaterno = doc.getString("apellidoMaterno") ?: ""
                     val fechaNac = doc.getString("fechaNacimiento") ?: ""
 
-                    // Mostrar nombre y apellidos
                     tvTituloNombre.text = nombres.split(" ").firstOrNull()?.uppercase() ?: ""
                     tvNombreValor.text = nombres
                     tvApellidoValor.text = "$apellidoPaterno $apellidoMaterno"
 
-                    // Calcular edad a partir de fecha
                     val edad = calcularEdad(fechaNac)
                     tvEdadValor.text = "$edad AÑOS"
                 } else {
@@ -65,6 +82,7 @@ class PerfilFragment : BaseMenuFragment() {
                 Toast.makeText(requireContext(), "Error al cargar datos", Toast.LENGTH_SHORT).show()
             }
     }
+
 
     private fun calcularEdad(fechaNacimiento: String): Int {
         return try {
