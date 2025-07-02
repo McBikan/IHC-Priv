@@ -24,7 +24,7 @@ class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
     private lateinit var btnDetener: Button
 
     private val client = OkHttpClient()
-    private val GROQ_API_KEY = "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"
+    private val GROQ_API_KEY = ""
 
     private var tts: TextToSpeech? = null
     private var fraseGenerada: String = ""

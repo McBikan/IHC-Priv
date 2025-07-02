@@ -45,7 +45,7 @@ class ChatFragment : Fragment() {
     private val archivoChat by lazy {
         File(requireContext().filesDir, "chat.json")
     }
-    private val GROQ_API_KEY = "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"
+    private val GROQ_API_KEY = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
