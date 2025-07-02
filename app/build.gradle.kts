@@ -1,3 +1,14 @@
+import java.util.Properties
+
+// ⬇️ Cargar antes de todo
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) {
+        load(file.inputStream())
+    }
+}
+val groqApiKey = localProperties.getProperty("GROQ_API_KEY") ?: ""
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -16,11 +27,9 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "1.0"
-        buildConfigField(
-            "String",
-            "GROQ_API_KEY",
-            "\"${properties["GROQ_API_KEY"]}\""
-        )
+
+        buildConfigField("String", "GROQ_API_KEY", "\"$groqApiKey\"")
+
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -56,15 +65,16 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
 
-    implementation("de.hdodenhof:circleimageview:3.1.0")
-    implementation("com.squareup.okhttp3:okhttp:4.12.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.9.1")
-    implementation("androidx.activity:activity-ktx:1.10.1")
-    implementation("androidx.core:core-ktx:1.16.0")
-    implementation("com.google.code.gson:gson:2.10.1")
+    implementation(libs.circleimageview)
+    implementation(libs.okhttp)
+    implementation(libs.coroutines.android)
+    implementation(libs.lifecycle.runtime.ktx)
+    implementation(libs.gson)
+    implementation(libs.json)
+    implementation(libs.androidx.core.ktx)
 
-    implementation("org.json:json:20230618")
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

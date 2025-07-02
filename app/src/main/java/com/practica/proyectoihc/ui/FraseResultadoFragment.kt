@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.practica.proyectoihc.BuildConfig
 import com.practica.proyectoihc.R
 import okhttp3.*
 import org.json.JSONObject
@@ -24,7 +25,7 @@ class FraseResultadoFragment : Fragment(), TextToSpeech.OnInitListener {
     private lateinit var btnDetener: Button
 
     private val client = OkHttpClient()
-    private val GROQ_API_KEY = "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"
+    private val GROQ_API_KEY = BuildConfig.GROQ_API_KEY
 
     private var tts: TextToSpeech? = null
     private var fraseGenerada: String = ""

@@ -24,6 +24,8 @@ import org.json.JSONObject
 import java.io.File
 import java.io.IOException
 import java.util.*
+import com.practica.proyectoihc.BuildConfig
+
 
 class ChatFragment : Fragment() {
 
@@ -45,7 +47,7 @@ class ChatFragment : Fragment() {
     private val archivoChat by lazy {
         File(requireContext().filesDir, "chat.json")
     }
-    private val GROQ_API_KEY = "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"
+    private val GROQ_API_KEY = BuildConfig.GROQ_API_KEY
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
