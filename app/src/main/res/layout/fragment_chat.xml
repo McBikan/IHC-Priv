@@ -167,16 +167,18 @@
         <!-- Botón volver fijo -->
         <Button
             android:id="@+id/btnVolver"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
             android:layout_margin="12dp"
-            android:text="Volver"
-            android:textSize="20sp"
-            android:backgroundTint="@color/morado_fuerte"
-            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
             android:layout_gravity="top|start"
-            android:elevation="4dp"
-            android:textStyle="bold" />
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/morado_fuerte"
+            android:elevation="4dp" />
     </FrameLayout>
 
 </FrameLayout>

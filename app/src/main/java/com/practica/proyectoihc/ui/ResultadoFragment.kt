@@ -54,7 +54,10 @@ class ResultadoFragment : Fragment() {
             "anger" to "😠",
             "fear" to "😨",
             "bored" to "🥱",
-            "excited" to "🤩"
+            "excited" to "🤩",
+            "feliz" to "😄",
+            "enojado" to "😠",
+            "serio" to "😐"
         )
 
         val resultadoBuilder = StringBuilder("🎭 Resultados por modelo:\n\n")

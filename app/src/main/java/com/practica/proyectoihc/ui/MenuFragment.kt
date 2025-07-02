@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.practica.proyectoihc.R
@@ -24,6 +25,7 @@ class MenuFragment : Fragment() {
         val btnFrases: LinearLayout = view.findViewById(R.id.opcionFrases)
         val btnHistorial: LinearLayout = view.findViewById(R.id.opcionHistorial)
         val btnEmociones : LinearLayout = view.findViewById(R.id.opcionEmocion)
+        val btnSalir: AppCompatButton =view.findViewById(R.id.btnSalir)
 
         btnEvaluacion.setOnClickListener {
             // Aquí navega al TestFragment
@@ -37,7 +39,7 @@ class MenuFragment : Fragment() {
         btnInteraccion.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_vozFragment)
         }
-        // Navegar a PerfilFragment
+        // Navegar a FrasesFragment
         btnFrases.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_frasesFragment)
         }
@@ -48,6 +50,11 @@ class MenuFragment : Fragment() {
         // Navegar a EmocionesFragment
         btnEmociones.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_emocionesFragment)
+        }
+
+        // Navegar a EmocionesFragment
+        btnSalir.setOnClickListener {
+            findNavController().navigate(R.id.action_menuFragment_to_loginFragment)
         }
 
         return view
