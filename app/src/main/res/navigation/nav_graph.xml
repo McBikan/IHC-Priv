@@ -52,6 +52,9 @@
         <action
             android:id="@+id/action_menuFragment_to_emocionesFragment"
             app:destination="@id/emocionesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
 
     </fragment>
     <fragment
