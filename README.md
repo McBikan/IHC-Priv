@@ -26,6 +26,7 @@ Este repositorio esta aun bajo desarrollo y continuara agregando mas caracterist
 - Clona el repositorio
   - git clone https://github.com/McBikan/ihc-chat-emocional.git
 - Abre en Android Studio
+- Tienes que tener una API_GROQ creada en GROQ
 - Ejecuta en emulador o dispositivo
 
 ## Licencia
