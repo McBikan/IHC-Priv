@@ -25,9 +25,10 @@ import java.io.File
 import java.io.IOException
 import java.util.*
 import com.practica.proyectoihc.BuildConfig
+import com.practica.proyectoihc.ui.base.BaseMenuFragment
 
 
-class ChatFragment : Fragment() {
+class ChatFragment : BaseMenuFragment() {
 
     private lateinit var btnMicrofono: ImageButton
     private lateinit var icMuteOverlay: ImageView
