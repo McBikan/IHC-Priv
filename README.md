@@ -30,4 +30,11 @@ Este repositorio esta aun bajo desarrollo y continuara agregando mas caracterist
 - Ejecuta en emulador o dispositivo
 
 ## Licencia
-Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+Este proyecto ya **no se encuentra bajo la Licencia MIT**.
+
+A partir del 14 de julio de 2025, todo el contenido de este repositorio se encuentra **protegido** y **no puede ser reutilizado, copiado ni redistribuido sin autorización expresa del autor**.
+
+Las versiones anteriores publicadas mientras estuvo bajo licencia MIT pueden seguir siendo utilizadas bajo los términos de dicha licencia, pero **las versiones futuras están sujetas a una licencia cerrada** y de uso restringido.
+
+Para cualquier uso, colaboración o consulta, contacta al autor.
+
