@@ -1,6 +1,13 @@
 # Sistema de Voz para Ayuda Emocional
 Aplicación móvil desarrollada en Android (Kotlin) que permite a los usuarios mantener una conversación por voz con un asistente emocional empático. Utiliza reconocimiento de voz, síntesis de voz y un modelo de lenguaje (via API) para generar respuestas comprensivas.
 
+## 📚 Documentación Completa
+
+Para una explicación detallada del proyecto, consulta:
+
+- **[DOCUMENTACION_DETALLADA.md](./DOCUMENTACION_DETALLADA.md)** - Explicación completa de todas las características, tecnologías, y funcionamiento del sistema
+- **[ARQUITECTURA.md](./ARQUITECTURA.md)** - Diagramas de arquitectura, flujos de datos, y estructura técnica del proyecto
+
 ## Nota
 Este repositorio esta aun bajo desarrollo y continuara agregando mas caracteristicas sobre ello.
 
